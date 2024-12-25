@@ -42,7 +42,7 @@ pomerode_dependencies = [
 ]
 
 executable(
-    meson.project_name(),
+    'pomerode',
     pomerode_sources,
     vala_args: pomerode_vala_args,
     dependencies: pomerode_dependencies,
