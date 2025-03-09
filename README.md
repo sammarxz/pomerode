@@ -18,6 +18,7 @@ A simple focus timer app.
 ## ⚡️ Requirements
 
 - elementary OS 7.0 or later
+- Granite 7.2.0 or later
 - GTK 4.0 or later
 - libadwaita 1.0 or later
 

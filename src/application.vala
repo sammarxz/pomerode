@@ -16,6 +16,15 @@ public class Pomerode.Application : Adw.Application {
         this.set_accels_for_action ("app.quit", {"<primary>q"});
     }
 
+    protected override void startup () {
+        // Make sure to use elementary stylesheet on Pantheon
+        if (Util.is_on_pantheon ()) {
+            Granite.init ();
+        }
+
+        base.startup ();
+    }
+
     public override void activate () {
         base.activate ();
         var win = this.active_window ?? new Pomerode.Window (this);
