@@ -22,6 +22,7 @@ pomerode_vala_sources = files(
     'main.vala',
     'application.vala',
     'preferences.vala',
+    'util.vala',
     'window.vala'
 )
 
@@ -34,6 +35,7 @@ pomerode_sources = [
 
 pomerode_dependencies = [
     dependency('gtk4'),
+    dependency('granite-7', version: '>= 7.2.0'),
     dependency('libadwaita-1'),
     dependency('glib-2.0'),
     dependency('gobject-2.0'),
